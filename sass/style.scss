@@ -1,0 +1,134 @@
+* {
+	font-family: "Roboto", sans-serif;
+}
+.header {
+	height: 100px;
+	background-color: pink;
+	text-align: center;
+	color: white;
+	font-size: 50px;
+	font-weight: 500;
+	&_flower {
+		&:after {
+			content: "\1F337";
+		}
+	}
+}
+.first {
+	padding: 20px 0 20px 0;
+
+	&_wrp {
+	}
+	&_video {
+		width: 80%;
+		margin: 0 auto;
+		video {
+			width: 100%;
+		}
+	}
+}
+.button {
+	display: block;
+	width: 500px;
+	height: 100px;
+	margin: 0 auto;
+	border-radius: 50px;
+	border: none;
+	color: rgb(255, 255, 255);
+	&_eight {
+		background-color: pink;
+		font-weight: 500;
+		font-size: 40px;
+		transition: 0.5s all;
+		&:hover {
+			box-shadow: 0 0 20px rgb(161, 159, 159);
+		}
+	}
+	&_video {
+		display: none;
+		margin-top: 20px;
+	}
+}
+.hide_btn {
+	animation: hide 1s;
+}
+@keyframes hide {
+	from {
+		opacity: 1;
+	}
+	to {
+		opacity: 0;
+		// display: none;
+	}
+}
+@keyframes active {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}
+
+.first {
+	transition: 2s all;
+	&_card {
+		border: 1px rgb(184, 179, 179) solid;
+		border-radius: 10px;
+		min-height: 20px;
+		box-shadow: 0 0 5px gray;
+		padding: 20px;
+		transition: 2s all;
+		display: none;
+		animation: opc 2s forwards;
+	}
+	&_eight {
+		&-img {
+			transition: 2s all;
+			display: none;
+			margin: 0 auto;
+			height: 300px;
+			opacity: 0;
+		}
+	}
+	&_wrp {
+		// width: 200%;
+	}
+	&_text {
+		text-align: center;
+		&-wrapper {
+			width: 30%;
+			margin: 0 auto;
+			&:after {
+				content: "Вітаю з 8 Березня!";
+				animation: text 1s forwards;
+			}
+		}
+	}
+	&_wrapper {
+		width: 90%;
+		margin: 0 auto;
+		text-align: center;
+		font-size: 40px;
+		font-weight: 500;
+		display: none;
+	}
+	&_video {
+		display: none;
+		width: 80%;
+		margin: auto;
+	}
+}
+@keyframes text {
+}
+.active {
+	display: block;
+}
+@keyframes opc {
+	from {
+		opacity: 0;
+	}
+	to {
+		opacity: 1;
+	}
+}

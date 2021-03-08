@@ -1,0 +1,182 @@
+@charset "UTF-8";
+* {
+  font-family: "Roboto", sans-serif;
+}
+
+.header {
+  height: 100px;
+  background-color: pink;
+  text-align: center;
+  color: white;
+  font-size: 50px;
+  font-weight: 500;
+}
+
+.header_flower:after {
+  content: "\1F337";
+}
+
+.first {
+  padding: 20px 0 20px 0;
+}
+
+.first_video {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.first_video video {
+  width: 100%;
+}
+
+.button {
+  display: block;
+  width: 500px;
+  height: 100px;
+  margin: 0 auto;
+  border-radius: 50px;
+  border: none;
+  color: white;
+}
+
+.button_eight {
+  background-color: pink;
+  font-weight: 500;
+  font-size: 40px;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+
+.button_eight:hover {
+  -webkit-box-shadow: 0 0 20px #a19f9f;
+          box-shadow: 0 0 20px #a19f9f;
+}
+
+.button_video {
+  display: none;
+  margin-top: 20px;
+}
+
+.hide_btn {
+  -webkit-animation: hide 1s;
+          animation: hide 1s;
+}
+
+@-webkit-keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes hide {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@-webkit-keyframes active {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes active {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.first {
+  -webkit-transition: 2s all;
+  transition: 2s all;
+}
+
+.first_card {
+  border: 1px #b8b3b3 solid;
+  border-radius: 10px;
+  min-height: 20px;
+  -webkit-box-shadow: 0 0 5px gray;
+          box-shadow: 0 0 5px gray;
+  padding: 20px;
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  display: none;
+  -webkit-animation: opc 2s forwards;
+          animation: opc 2s forwards;
+}
+
+.first_eight-img {
+  -webkit-transition: 2s all;
+  transition: 2s all;
+  display: none;
+  margin: 0 auto;
+  height: 300px;
+  opacity: 0;
+}
+
+.first_text {
+  text-align: center;
+}
+
+.first_text-wrapper {
+  width: 30%;
+  margin: 0 auto;
+}
+
+.first_text-wrapper:after {
+  content: "Вітаю з 8 Березня!";
+  -webkit-animation: text 1s forwards;
+          animation: text 1s forwards;
+}
+
+.first_wrapper {
+  width: 90%;
+  margin: 0 auto;
+  text-align: center;
+  font-size: 40px;
+  font-weight: 500;
+  display: none;
+}
+
+.first_video {
+  display: none;
+  width: 80%;
+  margin: auto;
+}
+
+@-webkit-keyframes text {}
+
+@keyframes text {}.active {
+  display: block;
+}
+
+@-webkit-keyframes opc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes opc {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+/*# sourceMappingURL=style.css.map */
